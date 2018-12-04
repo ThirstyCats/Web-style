@@ -1,0 +1,35 @@
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+ .form__input {
+   max-width: 90%;
+   margin: 30px 20px 0;
+   border: none;
+   border-bottom: 7px solid $color-primary;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   font-weight: bold;
+}
+
+@include media-l {
+  .form {
+    margin-top: 0;
+  }
+
+  .headline--secondary{
+    margin: 30px 0;
+  }
+
+  .form__input {
+    min-width: 80%;
+    margin: 30px auto 0 ;
+  }
+}

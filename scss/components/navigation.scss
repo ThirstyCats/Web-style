@@ -1,0 +1,37 @@
+.nav {
+  text-align: center;
+
+}
+.nav__item {
+  padding: 20px;
+  a {
+    @extend %link_reset;
+    @extend %headline-color
+  }
+  &:hover {
+    background-color: $color-primary;
+    border-radius: 5px;
+    & a {
+      color: white;
+    }
+  }
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+
+
+@include media-l {
+  .nav {
+    display: flex;
+  }
+
+  .nav__item {
+    &:first-child {
+      margin-top: 20px;
+    }
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+}

@@ -1,0 +1,38 @@
+
+@mixin flex{
+  @include media-max{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+  }
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+@mixin grid-space-L {
+  margin-bottom: $grid-bottom;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin grid-space-L-single {
+  margin-bottom: $grid-bottom;
+  text-align: center;
+}
+
+@mixin media-l {
+  @media (min-width: $break-l) {
+    @content;
+  }
+}
+
+@mixin media-max { // Fixes css ignoring declarations at 1440px.
+  @media (max-width: $break-l) {
+    @content;
+  }
+}

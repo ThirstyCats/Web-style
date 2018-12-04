@@ -1,0 +1,37 @@
+%grid-space {
+    @include media-max {
+    margin-bottom: 5px;
+    &:last-child {
+    margin-bottom: 40px;
+    }
+  }
+}
+
+%grid-space-single {
+  @include media-max {
+  margin-bottom: 5px;
+  }
+}
+
+%headline-color {
+  color: $color-font;
+}
+
+%image-layout {
+  max-width: $break-s;
+  margin: auto;
+}
+
+%button_style {
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+%link_reset{
+  text-decoration: none;
+  color: black;
+}

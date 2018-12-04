@@ -1,0 +1,40 @@
+
+button.theme__colors {
+  @extend %button_style;
+}
+
+
+.btn--default{
+  background-color: $color-default;
+  &[value="Login"]  {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @extend %button_style;
+    font-weight: bold;
+  }
+}
+
+.btn--success {
+  background-color: $color-success;
+}
+
+.btn--error {
+  background-color: $color-error;
+}
+
+.btn--warning {
+  background-color: $color-warning;
+}
+
+.btn--info {
+  background-color: $color-info;
+}
+
+
+@include media-l {
+
+button.theme__colors {
+  margin: 30px 30px;
+  padding: 10px 60px;
+}
+}

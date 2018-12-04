@@ -1,0 +1,23 @@
+
+
+.img--logo {
+  margin: 50px 0;
+}
+
+.img--avatar {
+  @extend %image-layout;
+}
+
+.img--frame {
+  @extend %image-layout;
+  border: 1px solid lighten($color-font, 30%);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+
+@include media-l {
+  .img--logo {
+    margin-top: auto;
+  }
+}

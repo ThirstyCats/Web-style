@@ -1,0 +1,48 @@
+.card {
+  text-align: left;
+  margin-top: 80px;
+}
+
+.headline--primary{
+  color: $color-primary;
+  margin-left: 20px;
+}
+
+.headline--secondary {
+  text-align: left;
+  margin-bottom: 40px;
+  @extend %headline-color;
+  font-weight: normal;
+}
+
+.link {
+  @extend %link_reset;
+  color: $color-default;
+  font-weight: bold;
+}
+
+.blockquote {
+  margin: 0 50px;
+  padding-left: 20px;
+  font-size: 1.5em;
+  border-left: 10px solid $color-primary;
+  border-radius: 10px;
+  @extend %headline-color;
+  font-style: italic;
+}
+
+
+@include media-l {
+  
+  .card {
+    margin-top: 20px;
+    p {
+      margin-top: 0;
+    }
+  }
+  .grid__col--12 {
+    p {
+      margin: 80px 0;
+    }
+  }
+}
